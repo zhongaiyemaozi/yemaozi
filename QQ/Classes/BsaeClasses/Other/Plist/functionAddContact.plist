@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>found_icons_saosao</string>
+			<key>name</key>
+			<string>扫一扫</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>add_icon_account_search</string>
+			<key>name</key>
+			<string>添加好友</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>add_icon_public</string>
+			<key>name</key>
+			<string>添加生活服务</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>add_icon_people_you_might_know</string>
+			<key>name</key>
+			<string>可能认识的人</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>add_icon_group_search</string>
+			<key>name</key>
+			<string>加入群</string>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>add_icon_group_create</string>
+			<key>name</key>
+			<string>创建群</string>
+		</dict>
+	</array>
+</array>
+</plist>

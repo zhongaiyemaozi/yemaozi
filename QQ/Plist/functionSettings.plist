@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>me</string>
+			<key>name</key>
+			<string>传智播客</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>我的资料</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>我的相册</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>我的收藏</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>消息通知</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>辅助功能</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>安全与隐私</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>个性签名</string>
+			<key>detail</key>
+			<string>不走寻常路</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>关于 QQ</string>
+			<key>pushVCName</key>
+			<string>QQAboutViewController</string>
+		</dict>
+	</array>
+</array>
+</plist>
