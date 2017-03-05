@@ -33,6 +33,7 @@ static NSString *phoneCell = @"phoneCell";
     
     self.tableView.tableHeaderView = self.searchController.searchBar;
     self.searchController.searchResultsUpdater = self;
+    self.navigationItem.title = @"电话本";
     [self loadData];
     
     UIBarButtonItem *barBtn = [[UIBarButtonItem alloc]initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(clickedAddButton:)];
