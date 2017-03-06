@@ -65,9 +65,6 @@ static NSString *rid = @"contact";
     
     QQAddAnyViewController *addAny = [[QQAddAnyViewController alloc]init];
     
-    //隐藏导航栏
-    addAny.hidesBottomBarWhenPushed = YES;
-    
     [self.navigationController pushViewController:addAny animated:YES];
 
 }
@@ -137,9 +134,6 @@ static NSString *rid = @"contact";
     //取消选中状态
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     QQChatViewController *chat = [[QQChatViewController alloc]init];
-    
-    //隐藏底部栏
-    chat.hidesBottomBarWhenPushed = YES;
     
     [self.navigationController pushViewController:chat animated:YES];
     

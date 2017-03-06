@@ -132,8 +132,7 @@ static NSString *sliCell = @"cell";
 
     QQSettingViewController *vc = [[QQSettingViewController alloc] init];
     vc.view.backgroundColor = [UIColor clearColor];
-    //隐藏底部栏
-    vc.hidesBottomBarWhenPushed = YES;
+
     [nav pushViewController:vc animated:YES];
 
     [sliderVC closeLeftVC];

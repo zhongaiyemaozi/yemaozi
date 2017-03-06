@@ -28,6 +28,7 @@
     //把数组中保存的所有路径都绘制出来
     for (CXLBeziePath *path in _pathList) {
         
+        NSLog(@"---%@",path);
         [path.lineColor set];
         [path stroke];
     }

@@ -30,14 +30,7 @@
 
 static NSString *mesage = @"mesage";
 
-@implementation QQMessageViewController{
-    
-    /**
-     *  @brief  下拉刷新控件
-     */
-//    ODRefreshControl *mRefreshControl;
-    
-}
+@implementation QQMessageViewController
 
 - (void)viewDidLoad {
     
@@ -45,26 +38,9 @@ static NSString *mesage = @"mesage";
     
     self.OnedataList = [self loadDataListWithPlistName:@"mesg.plist"];
     self.TwodataList = [self loadDataListWithPlistName:@"Two.plist"];
-    
-    //MARK:下拉控件
-//    mRefreshControl = [[ODRefreshControl alloc] initInScrollView:self.tableView];
-//    
-//    [mRefreshControl addTarget:self action:@selector(dropViewDidBeginRefreshing:) forControlEvents:UIControlEventValueChanged];
+
     
 }
-
-#pragma mark - 下拉控件刷新调用的方法
-//-(void)dropViewDidBeginRefreshing:(ODRefreshControl*)refresh
-//{
-//    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^
-//                   {
-//                       
-//                       [mRefreshControl endRefreshing];
-//                       
-//                   });
-//}
-
 
 #pragma mark - 搜索框搭建
 - (UISearchController *)searchController
@@ -125,10 +101,7 @@ static NSString *mesage = @"mesage";
     QQAddContactViewController *vc = [QQAddContactViewController new];
     
     vc.view.backgroundColor = [UIColor whiteColor];
-    
-    //隐藏底部栏
-    vc.hidesBottomBarWhenPushed = YES;
-    
+
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -200,10 +173,7 @@ static NSString *mesage = @"mesage";
     //取消选中状态
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     QQChatViewController *chat = [[QQChatViewController alloc]init];
-    
-    //隐藏底部栏
-    chat.hidesBottomBarWhenPushed = YES;
-    
+
     [self.navigationController pushViewController:chat animated:YES];
     
 }

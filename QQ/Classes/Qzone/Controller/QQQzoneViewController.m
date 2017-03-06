@@ -29,6 +29,7 @@ static NSString *qzoneCell = @"qzoneCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+       
     [self loadData];
     
 }
@@ -129,18 +130,12 @@ static NSString *qzoneCell = @"qzoneCell";
         
         QQPhoneTableViewController *phoneVC = [[QQPhoneTableViewController alloc]init];
         
-        //隐藏导航栏
-        phoneVC.hidesBottomBarWhenPushed = YES;
-        
         [self.navigationController pushViewController:phoneVC animated:YES];
     }else if (indexPath.section == 0 && indexPath.row == 1){
         
         UIStoryboard *SB = [UIStoryboard storyboardWithName:@"CXLDrawViewController" bundle:nil];
         
         UIViewController *drawVC = [SB instantiateInitialViewController];
-        
-        //隐藏导航栏
-        drawVC.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController pushViewController:drawVC animated:YES];
         
