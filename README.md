@@ -5,6 +5,8 @@
 **QQ**是无聊的自己搭的一个框架,并且里面的效果都对齐进行了封装,特点概述：
 
 - **首先登陆效果**:内部做了网络判断,一个效果图,内部需要随意可以更改,以封装;
+
+![image](https://github.com/zhongaiyemaozi/TallQQ-QQ/blob/master/QQ/Gif/start.gif)
 ### 代码块
 ``` python
 self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -16,6 +18,7 @@ self.window.rootViewController = [[YFLoginTransitionViewController alloc] init];
 
 ```
 - **侧滑效果**:仿QQ做了一个侧滑效果,已经对内部做了判断,在主页面进行了push后侧滑效果手势自动删除,并且进行了封装;
+![image](https://github.com/zhongaiyemaozi/TallQQ-QQ/blob/master/QQ/Gif/sideslip.gif)
 ### 代码块
 ``` python
 QQLeftViewController *leftVC = [[QQLeftViewController alloc] init];
