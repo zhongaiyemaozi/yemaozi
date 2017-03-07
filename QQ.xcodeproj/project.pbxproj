@@ -192,6 +192,13 @@
 		91AE59B21E55A966007EF669 /* NSArray+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AE59B11E55A966007EF669 /* NSArray+Addition.m */; };
 		91AE59B51E55A992007EF669 /* NSObject+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AE59B41E55A992007EF669 /* NSObject+Addition.m */; };
 		91B823F01E5E683100930959 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B823EF1E5E683100930959 /* ODRefreshControl.m */; };
+		91DCFB471E6E9750006ADA2B /*  search.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91DCFB401E6E9750006ADA2B /*  search.gif */; };
+		91DCFB481E6E9750006ADA2B /* photo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91DCFB411E6E9750006ADA2B /* photo.gif */; };
+		91DCFB491E6E9750006ADA2B /* reply.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91DCFB421E6E9750006ADA2B /* reply.gif */; };
+		91DCFB4A1E6E9750006ADA2B /* ScrollView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91DCFB431E6E9750006ADA2B /* ScrollView.gif */; };
+		91DCFB4B1E6E9750006ADA2B /* sideslip.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91DCFB441E6E9750006ADA2B /* sideslip.gif */; };
+		91DCFB4C1E6E9750006ADA2B /* start.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91DCFB451E6E9750006ADA2B /* start.gif */; };
+		91DCFB4D1E6E9750006ADA2B /* ye.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91DCFB461E6E9750006ADA2B /* ye.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -553,6 +560,13 @@
 		91AE59B41E55A992007EF669 /* NSObject+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Addition.m"; sourceTree = "<group>"; };
 		91B823EE1E5E683100930959 /* ODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		91B823EF1E5E683100930959 /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
+		91DCFB401E6E9750006ADA2B /*  search.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = " search.gif"; sourceTree = "<group>"; };
+		91DCFB411E6E9750006ADA2B /* photo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = photo.gif; sourceTree = "<group>"; };
+		91DCFB421E6E9750006ADA2B /* reply.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = reply.gif; sourceTree = "<group>"; };
+		91DCFB431E6E9750006ADA2B /* ScrollView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScrollView.gif; sourceTree = "<group>"; };
+		91DCFB441E6E9750006ADA2B /* sideslip.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sideslip.gif; sourceTree = "<group>"; };
+		91DCFB451E6E9750006ADA2B /* start.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = start.gif; sourceTree = "<group>"; };
+		91DCFB461E6E9750006ADA2B /* ye.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ye.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1281,6 +1295,7 @@
 		91AE58AE1E553897007EF669 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91DCFB3F1E6E9734006ADA2B /* Gif */,
 				914821861E680776008CC9FF /* Resource */,
 				91AE58B11E553897007EF669 /* AppDelegate.h */,
 				91AE58B21E553897007EF669 /* AppDelegate.m */,
@@ -1753,6 +1768,20 @@
 			path = ODRefreshControl;
 			sourceTree = "<group>";
 		};
+		91DCFB3F1E6E9734006ADA2B /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				91DCFB401E6E9750006ADA2B /*  search.gif */,
+				91DCFB411E6E9750006ADA2B /* photo.gif */,
+				91DCFB421E6E9750006ADA2B /* reply.gif */,
+				91DCFB431E6E9750006ADA2B /* ScrollView.gif */,
+				91DCFB441E6E9750006ADA2B /* sideslip.gif */,
+				91DCFB451E6E9750006ADA2B /* start.gif */,
+				91DCFB461E6E9750006ADA2B /* ye.gif */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1821,18 +1850,25 @@
 				914821881E680776008CC9FF /* ExpressionKeyboard.bundle in Resources */,
 				91AE595B1E554D8E007EF669 /* Info.plist in Resources */,
 				91A9E10C1E597B9900200165 /* autoreply.plist in Resources */,
+				91DCFB4D1E6E9750006ADA2B /* ye.gif in Resources */,
+				91DCFB471E6E9750006ADA2B /*  search.gif in Resources */,
 				91AE58BB1E553897007EF669 /* Assets.xcassets in Resources */,
+				91DCFB491E6E9750006ADA2B /* reply.gif in Resources */,
 				912DD1DB1E5D45AC0070F1E2 /* sound.caf in Resources */,
+				91DCFB4A1E6E9750006ADA2B /* ScrollView.gif in Resources */,
+				91DCFB4C1E6E9750006ADA2B /* start.gif in Resources */,
 				91AE59941E55852C007EF669 /* QQMessageCell.xib in Resources */,
 				91A9E10E1E597B9E00200165 /* messages.plist in Resources */,
 				9189DD441E55DAC600929EE5 /* Two.plist in Resources */,
 				91A9E1241E5A7BC600200165 /* QQHeader.xib in Resources */,
+				91DCFB4B1E6E9750006ADA2B /* sideslip.gif in Resources */,
 				915145B81E6065E30029BBBB /* QQQzoneOneCell.xib in Resources */,
 				91AE592F1E554388007EF669 /* functionSettings.plist in Resources */,
 				91A9E1161E5A6E1200200165 /* LeftSlider.plist in Resources */,
 				913DBBC71E6A9F8D00EA077F /* QQDatailImportView.xib in Resources */,
 				913DBC071E6ABF2400EA077F /* CXLDrawViewController.storyboard in Resources */,
 				91AE592D1E554388007EF669 /* functionAddContact.plist in Resources */,
+				91DCFB481E6E9750006ADA2B /* photo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

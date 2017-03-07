@@ -170,8 +170,7 @@ static NSString *mesage = @"mesage";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    //取消选中状态
-    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+
     QQChatViewController *chat = [[QQChatViewController alloc]init];
 
     [self.navigationController pushViewController:chat animated:YES];
