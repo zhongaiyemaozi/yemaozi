@@ -18,7 +18,9 @@ self.window.rootViewController = [[YFLoginTransitionViewController alloc] init];
 
 ```
 - **侧滑效果**:仿QQ做了一个侧滑效果,已经对内部做了判断,在主页面进行了push后侧滑效果手势自动删除,并且进行了封装;
+
 ![image](https://github.com/zhongaiyemaozi/TallQQ-QQ/blob/master/QQ/Gif/sideslip.gif)
+
 ### 代码块
 ``` python
 QQLeftViewController *leftVC = [[QQLeftViewController alloc] init];
@@ -32,6 +34,9 @@ controller.transitioningDelegate = self;
 
 ```
 - **搜索框效果**:若你的项目需要搜索框,直接可以移植走,进行了封装;
+
+![image](https://github.com/zhongaiyemaozi/TallQQ-QQ/blob/master/QQ/Gif/%20search.gif)
+### 代码块
 ``` python
 
 self.tableView.tableHeaderView = self.searchController.searchBar;
@@ -71,6 +76,9 @@ searchResultsViewController.searchDataArray = [NSMutableArray arrayWithArray:tem
 
 ```
 - **聊天界面**:进行了高仿QQ的聊天界面,每个人一句话,并且对此增加了自动回复,而且进行了封装,并且聊天界面的键盘也进行了高度封装,可以自己加入需要的表情,大概我增加了两个类的表情,都可以使用,类中做了判断,并且使用起来很简单;
+
+![image](https://github.com/zhongaiyemaozi/TallQQ-QQ/blob/master/QQ/Gif/reply.gif)
+### 代码块
 ``` python
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
@@ -84,6 +92,9 @@ QQChatViewController *chat = [[QQChatViewController alloc]init];
 
 ```
 - **相册类效果**:聊天界面右上角进行了对扫一扫功能进行优化,可以进行访问相机进行扫一扫,并且还可以访问本机相册的二维码,还能在扫一扫相机页面打开闪光灯;
+
+![image](https://github.com/zhongaiyemaozi/TallQQ-QQ/blob/master/QQ/Gif/photo.gif)
+### 代码块
 ``` python
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -141,6 +152,9 @@ QQCommonViewController *commonVC = [[QQCommonViewController alloc]init];
 }
 ```
 - **联系人页面添加效果**:联系人右上角跳转到添加,进行了布局效果,可以进行滑动,也可以根据自己的需求添加内容;
+
+![image](https://github.com/zhongaiyemaozi/TallQQ-QQ/blob/master/QQ/Gif/ScrollView.gif)
+### 代码块
 ``` python
 
 #pragma mark - 右上角添加的点击事件
@@ -155,6 +169,8 @@ QQAddAnyViewController *addAny = [[QQAddAnyViewController alloc]init];
 - **好友动画**:好友动画页面对大概布局做了一个整理,里面主要目前添加了电话本和小画板的两个小功能;
 
 - **电话本**:电话本对数据进行了实例化,并且可以随便跳转,保存并修改数据
+![image](https://github.com/zhongaiyemaozi/TallQQ-QQ/blob/master/QQ/Gif/photo.gif)
+### 代码块
 ``` python
 QQPhoneTableViewController *phoneVC = [[QQPhoneTableViewController alloc]init];
 
@@ -162,6 +178,7 @@ QQPhoneTableViewController *phoneVC = [[QQPhoneTableViewController alloc]init];
 
 ```
 - **小画板**:小画板可以根据自己的要求,粗细颜色都集成,当然颜色不够自己还可以再加,而且保存可以把屏幕进行截屏保存到你的相册.
+### 代码块
 ``` python
 UIStoryboard *SB = [UIStoryboard storyboardWithName:@"CXLDrawViewController" bundle:nil];
 
