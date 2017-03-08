@@ -87,8 +87,8 @@ static NSString *oneCell = @"oneCell";
 
 #pragma mark - UITableViewDelegate代理方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //取消选中状态
-    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     QQCommonViewController *commonVC = [[QQCommonViewController alloc]init];
     [self.navigationController pushViewController:commonVC animated:YES];
     

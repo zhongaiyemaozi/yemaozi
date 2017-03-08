@@ -141,8 +141,8 @@ static NSString *sliCell = @"cell";
 
 #pragma mark - UITableViewDelegate代理方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //取消选中状态
-    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+    //让点击有动画效果
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     QQSliderViewController *sliderVC = (QQSliderViewController *)self.parentViewController;
     
     QQMainViewController *rightVC = (QQMainViewController *)sliderVC.rightVC;
@@ -151,8 +151,7 @@ static NSString *sliCell = @"cell";
     
     QQCommonViewController *vc = [[QQCommonViewController alloc] init];
     vc.view.backgroundColor = [UIColor clearColor];
-    //隐藏底部栏
-    vc.hidesBottomBarWhenPushed = YES;
+
     [nav pushViewController:vc animated:YES];
     
     [sliderVC closeLeftVC];

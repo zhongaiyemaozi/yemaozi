@@ -169,8 +169,8 @@ static NSString *mesage = @"mesage";
 #pragma mark - 点击跳转到聊天的控制器
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
     QQChatViewController *chat = [[QQChatViewController alloc]init];
 
     [self.navigationController pushViewController:chat animated:YES];
