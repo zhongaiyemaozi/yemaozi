@@ -8,7 +8,7 @@
 
 #import "QQBaseNavigationViewController.h"
 
-@interface QQBaseNavigationViewController ()<UIGestureRecognizerDelegate>
+@interface QQBaseNavigationViewController ()
 
 @end
 

@@ -10,9 +10,7 @@
 #import "QQQzoneOneCell.h"
 #import "QQPhoneTableViewController.h"
 
-@interface QQQzoneViewController ()<UITableViewDataSource,UISearchResultsUpdating,UITableViewDelegate>
-
-@property (nonatomic, strong) UISearchController *searchController;
+@interface QQQzoneViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, weak) UITableView *tableView;
 
@@ -29,7 +27,6 @@ static NSString *qzoneCell = @"qzoneCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-       
     [self loadData];
     
 }
@@ -53,8 +50,7 @@ static NSString *qzoneCell = @"qzoneCell";
     
     QQQzoneOneCell *topView = [QQQzoneOneCell zoneOneCell];
     self.tableView.tableHeaderView = topView;
-    self.searchController.searchResultsUpdater = self;
-
+  
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:qzoneCell];
     
     
@@ -83,38 +79,6 @@ static NSString *qzoneCell = @"qzoneCell";
 }
 
 
-
-#pragma mark - 搜索框搭建
-- (UISearchController *)searchController
-{
-    if (!_searchController) {
-        QQSearchResultsTableViewController *searchResultsViewController = [[QQSearchResultsTableViewController alloc] init];
-        _searchController = [[UISearchController alloc] initWithSearchResultsController:searchResultsViewController];
-        // 传入nil表示使用当前控制器
-        _searchController.searchBar.frame = CGRectMake(0, 0, 200, 44);
-        _searchController.searchBar.placeholder = @"搜索电影/音乐/商品...";
-    }
-    return _searchController;
-}
-
-#pragma mark - UISearchResultsUpdating
-- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
-{
-    // 创建临时数组，存放搜索到的内容
-    NSMutableArray *tempArray = [NSMutableArray array];
-    NSString *text = searchController.searchBar.text;
-    for (NSString *item in self.dataArray) {
-        if (text.length != 0 && [item containsString:text]) {
-            [tempArray addObject:item];
-        }
-    }
-    
-    // 给searchResultViewController进行传值，并且reloadData
-    QQSearchResultsTableViewController *searchResultsViewController = (QQSearchResultsTableViewController *)searchController.searchResultsController;
-    searchResultsViewController.tableView.frame = CGRectMake(0, 64, YFScreen.width, YFScreen.height - 64);
-    searchResultsViewController.searchDataArray = [NSMutableArray arrayWithArray:tempArray];
-    [searchResultsViewController.tableView reloadData];
-}
 
 #pragma mark - 加载数据
 - (void)loadData {
