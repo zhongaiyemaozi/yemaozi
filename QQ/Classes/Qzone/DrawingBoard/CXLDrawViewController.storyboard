@@ -12,7 +12,6 @@
         <!--Draw View Controller-->
         <scene sceneID="wsa-aN-R7p">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xwg-wU-Nvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="IYS-sp-vuP" customClass="CXLDrawViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ivv-Iu-lLl"/>
@@ -181,8 +180,9 @@
                         <outlet property="panelView" destination="EQs-3I-bqW" id="uG0-gX-sf2"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xwg-wU-Nvv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-86.806596701649184"/>
+            <point key="canvasLocation" x="28" y="-114"/>
         </scene>
     </scenes>
 </document>

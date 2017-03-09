@@ -108,7 +108,7 @@
 - (void)changePage:(QQAddHeaderView *)sender {
     
     //用代码来改变scrollView的偏移量
-    [_scrollView setContentOffset:CGPointMake(sender.tag * _scrollView.bounds.size.width, 0) animated:YES];
+    [_scrollView setContentOffset:CGPointMake(sender.tag * _scrollView.bounds.size.width, 0) animated:NO];
     
 }
 
