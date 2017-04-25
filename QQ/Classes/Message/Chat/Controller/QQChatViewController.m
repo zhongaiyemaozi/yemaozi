@@ -11,6 +11,7 @@
 #import "QQChatOtherCell.h"
 #import "YYKit.h"
 #import "YHExpressionKeyboard.h"
+#import "QQMessageViewController.h"
 
 @interface QQChatViewController ()<UITableViewDelegate,UITableViewDataSource,UITextViewDelegate,YHExpressionKeyboardDelegate>
 
@@ -33,11 +34,10 @@ static NSString *chatOtherCellID = @"chatOther_cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     self.chatData = [self loadChatData];
+
     
 }
-
 
 
 #pragma mark - 数据源方法
